@@ -997,21 +997,6 @@ HOVER EFFECTS
 PROJECT IMAGE
 */
 
-/* .project-image{
-
-    width:100%;
-
-    height:400px;
-
-    object-fit:cover;
-
-    display:block;
-
-    border-radius:20px 20px 0 0;
-
-    transition:.45s;
-
-} */
 .project-image{
 
     width:100%;
@@ -1855,8 +1840,70 @@ footer{
         height:240px;
 
     }
+/* Mobile Menu Button */
+
+.menu-btn{
+
+    display:none;
+
+    font-size:2rem;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    background:none;
+
+    border:none;
 
 }
+
+    .menu-btn{
+
+        display:block;
+
+    }
+
+    nav{
+
+        position:fixed;
+
+        top:80px;
+
+        right:-100%;
+
+        width:270px;
+
+        height:100vh;
+
+        background:#111;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        justify-content:flex-start;
+
+        padding-top:40px;
+
+        gap:25px;
+
+        transition:.35s;
+
+        z-index:999;
+
+    }
+
+    nav.active{
+
+        right:0;
+
+    }
+
+}
+
 
 
 /* Large Phones */
@@ -1943,6 +1990,7 @@ footer{
 
 
 /* Small Android */
+
 
 @media (max-width:390px){
 
